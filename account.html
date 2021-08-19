@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap" rel="stylesheet">
+    <!--icon-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!--courosel-->
+    <style>
+        .ft{
+            background-size: cover;
+            background-position: center;
+        
+            height: auto;
+        }
+        h1{
+            padding-bottom: 20px;
+           color: aliceblue;
+        }
+        .acc-page{
+            background-color: #fdfbfc;;
+        }
+    </style>
+  
+</head>
+<body>
+    <section class="all-header">
+        <nav>
+            <a href="index.html">  <img src="images/logo2.png" width="50px" height="auto" class="bg"></a>
+            <div class="nav-link" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()" ></i>
+                 <ul>
+                    <li><a  class="active" href="index.html">Home</a></li> 
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li> <a href="account.html">Account</a></li>
+                   
+                </ul>
+                
+            </div>
+            <i class="fa fa-bars"  onclick="showmenu()"></i>
+            
+        </nav>
+    
+    </section>
+   
+
+    <!--acc-->
+    <div class="acc-page">
+        <h1>Login</h1>
+        <div class="container">
+            <div class="row">
+                <div class="of">
+                    <img src="images/acc7.jpg" class="ft">
+                </div>
+                <div class="of">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">login</span>
+                            <span onclick="register()">register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginform">
+                            <input type="text" placeholder="Your Name"><br>
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">submit</button>
+                            <a href="">Don't have account? Register</a>
+                        </form>
+                        <form id="regform">
+                            <input type="text" name="Name" placeholder="Your Name"><br>
+                            <input type="email" name="Email" placeholder="Mail Id"><br>
+                            <input type="password" name="Email" placeholder="Password"><br>
+                            
+                            <button type="submit" class="btn">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER -->
+    <footer>
+        <div class="f_logo"></div>
+
+            <a href="#"><img src="images/logo2.png" width="100px" height="auto"></a>  
+        </div>
+        <div class="page">
+            <h2>pages</h2>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="account.html">Login </a>
+            <a href="account.html">sign up</a>
+        </div>
+        <div class="doct">
+            <h2>Documents</h2>
+            <a href="">Privacy Policy </a>
+            <a href="">Terms and Conditions </a>
+            <a href="">Refund policies </a>
+        </div>
+
+        <div class="social">
+            <h2>Social Media</h2>
+            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter-square"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div class="con">
+            <h2>contacts Us</h2>
+            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel: +919812345678"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: abc@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <P>copyright &copy; 2021 </P>
+    </footer>
+
+
+    <!--js for toogle-->
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        
+        function showmenu()
+        {
+            navlinks.style.right="0";
+           
+        }
+        function hidemenu()
+        {
+            navlinks.style.right="-200px";
+        }
+    </script>
+     <!--js for toogle form-->
+     <script>
+         var loginform=document.getElementById("loginform");
+         var regform=document.getElementById("regform");
+         var indicator=document.getElementById("indicator");
+
+
+         function register(){
+            regform.style.transform="translateX(0px)";
+            loginform.style.transform="translateX(0px)";
+            indicator.style.transform="translateX(100px)";
+         }
+         function login(){
+            regform.style.transform="translateX(300px)";
+            loginform.style.transform="translateX(300px)";
+            indicator.style.transform="translateX(0px)";
+         }
+     </script>
+</body>
+</html>

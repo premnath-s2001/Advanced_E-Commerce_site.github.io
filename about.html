@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap" rel="stylesheet">
+    <!--icon-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!--courosel-->
+  
+</head>
+<body>
+    <section class="all-header">
+        <nav>
+            <a href="index.html">  <img src="images/logo2.png" width="50px" height="auto" class="bg"></a>
+             
+            <div class="nav-link" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()" ></i>
+                 <ul>
+                    <li><a  class="active" href="index.html">Home</a></li> 
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li> <a href="account.html">Account</a></li>
+                   
+                </ul>
+                
+            </div>
+            <img src="images/cart.png" class="cart-img">
+            <i class="fa fa-bars"  onclick="showmenu()"></i>
+            
+        </nav>
+    
+    </section>
+    
+
+    <!--OUR TEAM -->
+    <div class="team">
+        <h2>OUR TEAM</h2>
+        <div class="team_container team-container1">
+            <div class="team_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/V_ozu_7Xweg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>  
+            <div class="team_content">
+                <h2>about us</h2>
+               <p class="para"><b>ADIDAS AT A GLANCE</b><br>
+                adidas has its roots in Germany but we are a truly global company.
+                 Around the world we employ over 62,000 people.
+                  At our global HQ in Herzogenaurach, Germany, our teams are made up of people from over 100 different nations. These numbers alone can easily suggest that adidas is quite a large and also multifaceted organization. True. But we keep things simple, lean, and fast. And we will use this approach now to give an overview of what our company is all about.<br>
+                  <b>OUR ATTITUDE: IMPOSSIBLE IS NOTHING</b> <br>
+                  At adidas, we are rebellious optimists driven by action, with a desire to shape a better future together. We see the world of sport and culture with possibility where others only see the impossible. ‘Impossible is Nothing’ is not a tagline for us. By being optimistic and knowing the power of sport, we see endless possibilities to apply this power and push all people forward with action.   
+                </p> 
+            </div>
+        </div>
+    </div>
+
+
+   
+    
+   
+     <!--FOOTER -->
+     <footer>
+        <div class="f_logo"></div>
+
+            <a href="#"><img src="images/logo2.png" width="100px" height="auto"></a>  
+        </div>
+        <div class="page">
+            <h2>pages</h2>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="account.html">Login </a>
+            <a href="account.html">sign up</a>
+        </div>
+        <div class="doct">
+            <h2>Documents</h2>
+            <a href="">Privacy Policy </a>
+            <a href="">Terms and Conditions </a>
+            <a href="">Refund policies </a>
+        </div>
+
+        <div class="social">
+            <h2>Social Media</h2>
+            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter-square"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div class="con">
+            <h2>contacts Us</h2>
+            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel: +919812345678"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: abc@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <P>copyright &copy; 2021 </P>
+    </footer>
+
+
+    <!--js for toogle-->
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        
+        function showmenu()
+        {
+            navlinks.style.right="0";
+           
+        }
+        function hidemenu()
+        {
+            navlinks.style.right="-200px";
+        }
+    </script>
+    
+</body>
+</html>
